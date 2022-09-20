@@ -1,0 +1,50 @@
+:root {
+	--bkgnd-color: #313131;
+	--btn-color: #ca3e47;
+	--box-color: #414141;
+	--dflt--color: #525252;
+	--font-color: #fafafa;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* Add fonts */
+	line-height: 1.15;
+	font-size: 16px;
+	color: var(--font-color);
+	background-color: var(--bkgnd-color);
+}
+
+h1 {
+	font-size: clamp(1.913rem, calc(12px + 2.475vw), 2.587rem);
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: clamp(1.575rem, calc(12px + 1.8vw), 2.025rem);
+	line-height: 1.1;
+}
+
+h3 {
+	font-size: clamp(1.282rem, calc(12px + 1.35vw), 1.688rem);
+	line-height: 1.1;
+}
+
+h4 {
+	font-size: clamp(1.125rem, calc(12px + 0.9vw), 1.35rem);
+	line-height: 1.1;
+}
+
+p {
+	font-size: clamp(1.035rem, calc(12px + 0.54vw), 1.125rem);
+	line-height: 1.1;
+}
+
+span {
+	font-size: clamp(0.9rem, calc(12px + 0.36vw), 1.012rem);
+	line-height: 1.1;
+}
