@@ -5,6 +5,11 @@
 	--dflt--color: #525252;
 	--font-color: #fafafa;
 }
+
+html {
+	font-size: 100%;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -13,20 +18,22 @@
 
 body {
 	/* Add fonts */
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
 	line-height: 1.15;
-	font-size: 16px;
+	/* font-size: 16px; */
 	color: var(--font-color);
 	background-color: var(--bkgnd-color);
 }
 
 h1 {
 	font-size: clamp(1.913rem, calc(12px + 2.475vw), 2.587rem);
-	line-height: 1.1;
+	/* line-height: 1.1; */
 }
 
 h2 {
 	font-size: clamp(1.575rem, calc(12px + 1.8vw), 2.025rem);
-	line-height: 1.1;
+	/* line-height: 1.1; */
 }
 
 h3 {
@@ -41,7 +48,7 @@ h4 {
 
 p {
 	font-size: clamp(1.035rem, calc(12px + 0.54vw), 1.125rem);
-	line-height: 1.1;
+	/* line-height: 1.1; */
 }
 
 span {
