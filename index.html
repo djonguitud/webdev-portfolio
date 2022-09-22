@@ -16,9 +16,9 @@
 	</head>
 	<body>
 		<!-- Very top navagation with fixed position -->
-		<header>
+		<header id="navHide">
 			<!-- Transparent nav -->
-			<nav>
+			<nav >
 				<a href="#">Inicio</a>
 				<a href="#">Acerca</a>
 				<a href="#">Aplicaciones</a>
@@ -32,12 +32,12 @@
 			</div>
 		</header>
 		<!-- Container to keep contraints -->
-		<main>
+		<main class="main__content">
 			<!-- Hero page section -->
 			<section class="hero">
 				<!-- Avatar photo -->
 				<div class="avatar">
-					<img src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrolador web" />
+					<img class="responsiveImg" src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrolador web" />
 				</div>
 
 				<!-- Middle line for design purpuses -->
@@ -56,9 +56,32 @@
 				</div>
 			</section>
 
-			<section></section>
-			<section></section>
+			<section class="about__sctn main__content">
+				<div class="about__rspve">
+					<h2>Acerca</h2>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reprehenderit cumque tempore delectus ipsum soluta?
+
+				</p>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, modi?</p>
+				</div>
+				
+			</section>
+			<section class="apps__sctn main__content">
+				
+				<div class="apps__grid">
+					<h3 class="appsTitles">Aplicaciones prototipo</h3>
+					<div class="imgOne boxShadow gridHeight"><h4>Prototipo para agencia de marketing</h4></div>
+					<div class="imgTwo boxShadow gridHeight gridbkgnd"></div>
+					<div class="imgThree boxShadow gridHeight gridbkgnd"></div>
+					<div class="imgFour boxShadow gridHeight gridbkgnd"></div>
+					<div class="imgFive boxShadow gridHeight gridbkgnd"></div>
+				</div>
+						
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<h3>I'm a footer</h3>
+		</footer>
+		<script src="./code/script.js"></script>
 	</body>
 </html>
