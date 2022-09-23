@@ -4,9 +4,11 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Portfolio</title>
-		<!-- Add a good title -->
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&display=swap" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;900&display=swap" rel="stylesheet" />
@@ -17,13 +19,15 @@
 	<body>
 		<!-- Very top navagation with fixed position -->
 		<header id="navHide">
-			<!-- Transparent nav -->
+			<!-- Appearing and disappearing nav -->
 			<nav>
 				<a href="#home">Inicio</a>
 				<a href="#acerca">Acerca</a>
 				<a href="#aplicaciones">Aplicaciones</a>
 				<a href="#contacto">Contacto</a>
 			</nav>
+			<!-- Social apps icons -->
+			<!-- Accesible subsection -->
 			<div class="icons">
 				<a href="#" target="_blank" class="fa fa-linkedin"></a>
 				<a href="https://github.com/djonguitud" target="_blank" class="fa fa-github"></a>
@@ -37,7 +41,7 @@
 			<section class="hero" id="home">
 				<!-- Avatar photo -->
 				<div class="avatar">
-					<img class="responsiveImg" src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrolador web" />
+					<img class="responsiveImg" src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrollador web" />
 				</div>
 
 				<!-- Middle line for design purpuses -->
@@ -45,9 +49,9 @@
 
 				<!-- Main slogan -->
 				<div class="slogan">
-					<h1>HOLA! SOY DIEGO. DESARROLLADOR WEB FULLSTACK</h1>
+					<h1 id="langChange">HOLA! SOY DIEGO. DESARROLLADOR WEB <span class="specificWordStyle">FULL STACK</span></h1>
 					<!--  -->
-					<p>ESTABLECIDO EN MONTERREY</p>
+					<p id="sloganMty">ESTABLECIDO EN MONTERREY</p>
 				</div>
 			</section>
 
