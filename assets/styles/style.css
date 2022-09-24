@@ -56,6 +56,19 @@ p {
 	max-width: 100%;
 }
 
+.subTitles {
+	text-align: center;
+	margin-bottom: 5rem;
+	font-weight: 400;
+	font-size: 4rem;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
 /*=====  End of Section comment block  ======*/
 
 /*=============================================
@@ -87,7 +100,6 @@ nav {
 }
 
 nav a {
-	text-decoration: none;
 	display: block;
 	/* margin-left: 1.5em; */
 	color: var(--bkgnd-color);
@@ -124,7 +136,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-	/* min-height: 100%; */
+	min-height: 100%;
 	background-image: var(--bkgnd-gradient);
 	max-width: 100%;
 }
@@ -142,7 +154,6 @@ main {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	padding: 6rem;
 }
 
 .avatar {
@@ -252,71 +263,106 @@ h1 {
 	padding: 8rem 0 8rem 0;
 }
 
-.about__rspve h2 {
-	text-align: center;
-	margin-bottom: 5rem;
-	font-weight: 600;
-	font-size: 4rem;
-}
-
 /*=====  End of Section   ======*/
 
 /*=============================================
 =           Aplicaciones         =
 =============================================*/
-
 .apps__sctn {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	padding: 5em 0 5em 0;
-}
-
-.apps__grid {
-	min-width: 65%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto 1fr 1fr;
-	gap: 2.5em 2.5em;
-	grid-template-areas:
-		"appsTitles appsTitles"
-		"imgOne imgOne"
-		"imgTwo imgThree"
-		"imgFour imgFive";
 	align-items: center;
+	padding: 10rem 0 10rem 0;
+}
+
+.apps__flex {
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	position: relative;
 }
 
-.appsTitles {
-	grid-area: appsTitles;
-	margin-bottom: 1.5em;
-	text-align: center;
+.apps__flex h3 {
+	width: 100%;
 }
 
-/* Make hover so image turn into fade img with a title and clickable */
+.flexHeight {
+	min-height: 35rem;
+	max-height: 45rem;
+}
+
 .imgOne {
-	grid-area: imgOne;
+	width: 100%;
 	background: #fff url(/assets/images/demo-horiseon.png) top center/cover no-repeat;
-}
-.imgTwo {
-	grid-area: imgTwo;
-}
-.imgThree {
-	grid-area: imgThree;
-}
-.imgFour {
-	grid-area: imgFour;
-}
-.imgFive {
-	grid-area: imgFive;
-}
-
-.gridBoxStyles {
-	min-height: 25em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
 	box-shadow: 9px 13px 19px 0px rgba(0, 0, 0, 0.75);
+	position: relative;
 }
 
-.gridbcknd {
-	background: #fff url(/assets/images/no-image.jpg) top center/cover no-repeat;
+.imgOne h4 {
+	color: var(--font-color);
+	font-size: clamp(2.25rem, calc(12px + 1vw), 3.5rem);
+	line-height: 1.1;
+	font-weight: 400;
+	text-align: center;
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* TODO Blur the imgOne box when hovering */
+
+.imgOne h4 a {
+	visibility: hidden;
+}
+
+.imgOne h4:hover a {
+	visibility: visible;
+}
+
+.imgOne h4:hover {
+	background: rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(15px);
+}
+
+.imgOne h4 a:visited,
+.imgOne h4 a:link {
+	color: var(--font-color);
+	text-decoration: underline;
+}
+
+.flexStyle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 auto;
+	background-color: rgb(177, 177, 177);
+	font-size: clamp(2.25rem, calc(12px + 1vw), 3.5rem);
+	color: var(--bkgnd-color);
+	box-shadow: 9px 13px 19px 0px rgba(0, 0, 0, 0.75);
+	transition: 0.5s;
+	border-radius: 15px;
+	padding: 2rem;
+}
+
+.apps__flex div:not(.imgOne):hover {
+	background: rgba(30, 30, 30, 0.46);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.4px);
+	-webkit-backdrop-filter: blur(6.4px);
+	color: var(--font-color);
 }
 
 /*=====  End of Section   ======*/
