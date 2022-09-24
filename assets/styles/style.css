@@ -10,6 +10,8 @@
 	--font-color: #fafafa;
 	--bkgnd-gradient: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	font-size: 62.5%;
+	--basic-font: "Montserrat", system-ui, -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -25,8 +27,7 @@ html {
 
 body {
 	/* Add fonts */
-	font-family: "Montserrat", system-ui, -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", Cantarell, "Open Sans",
-		"Helvetica Neue", sans-serif; /* wght@200;400;600;900 */
+	font-family: var(--basic-font); /* wght@200;400;600;900 */
 	line-height: 1.15;
 	font-size: 1.6rem;
 	color: var(--font-color);
