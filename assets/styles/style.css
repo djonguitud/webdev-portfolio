@@ -330,7 +330,7 @@ h1 {
 .apps__sctn h4 a:visited,
 .apps__sctn h4 a:link {
 	color: var(--font-color);
-	text-decoration: underline;
+	
 }
 
 .flexStyle {
