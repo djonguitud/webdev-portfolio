@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,8 +18,8 @@
 	</head>
 	<body>
 		<!-- !Container to stall the width going widther -->
-		<div class="container">
-			<!-- * * Very top navagation with sticky position -->
+		<div class="container" role="Contenedor para estilo y mantener medidas de ancho y altura">
+			<!-- * * Very top navagation with sticky position, adding ID for Javascript DOM -->
 			<header id="navHide">
 				<!-- TODO Appearing and disappearing nav -->
 				<nav>
@@ -35,31 +35,31 @@
 				<!-- ** HERO SECTION -->
 				<section class="hero main__content" id="home">
 					<!-- Avatar photo -->
-					<div class="avatar">
+					<div class="avatar" role="contenedor de imagen">
 						<img class="responsiveImg" src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrollador web" />
 					</div>
-
 					<!--? Middle line for design purpuses -->
-					<div class="middle-line"></div>
-
+					<div class="middle-line" role="linea que divide image y slogan principal"></div>
 					<!-- Main slogan -->
-					<div class="slogan">
-						<h1>HOLA! SOY DIEGO. DESARROLLADOR WEB <span class="specificWordStyle">FULL STACK</span></h1>
+					<div class="slogan" role="contenedor de slogan principal">
+						<h1>
+							HOLA! SOY DIEGO. DESARROLLADOR WEB
+							<span class="specificWordStyle" role="frase Full Stack resaltado en rojo">FULL STACK</span>
+						</h1>
 						<p class="sloganMty">ESTABLECIDO EN MONTERREY</p>
 						<div class="icons">
-							<a href="#" target="_blank" class="fa fa-linkedin"></a>
+							<a href="https://www.linkedin.com/in/diegojongal/" target="_blank" class="fa fa-linkedin"></a>
 							<a href="https://github.com/djonguitud" target="_blank" class="fa fa-github"></a>
-							<a href="#" target="_blank" class="fa fa-youtube"></a>
-							<a href="#" target="_blank" class="fa fa-reddit"></a>
+							<a
+								href="https://www.youtube.com/channel/UC3k68XAfxXoANvRZOQA-4Zw/featured"
+								target="_blank"
+								class="fa fa-youtube"></a>
 						</div>
 					</div>
-
-					<!--? Social icons -->
 				</section>
-
 				<!--** ACERCA SECTION -->
 				<section class="about__sctn main__content" id="acerca">
-					<div class="about__items">
+					<article class="about__items">
 						<h2 class="subTitles">Acerca de mi trabajo</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reprehenderit cumque tempore delectus ipsum
@@ -69,25 +69,25 @@
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ab adipisci consequatur magni possimus
 							recusandae.
 						</p>
-					</div>
+					</article>
 				</section>
-				<!-- TODO inside h4 put a tags, maybe change font face of a tags-->
+				<!-- ** APLICACIONES SECTION-->
 				<section class="apps__sctn main__content" id="aplicaciones">
 					<div class="apps__flex">
 						<h3 class="subTitles">Aplicaciones prototipo</h3>
+						<!-- Div created for style purposes-->
 						<div class="imgOne flexHeight">
 							<h4>
 								<a href="https://djonguitud.github.io/horiseon-demo/" target="_blank">Agencia de marketing</a>
 							</h4>
 						</div>
-						<div class="imgTwo flexHeight flexStyle"><h4>Sin imagen</h4></div>
-						<div class="imgThree flexHeight flexStyle"><h4>Sin imagen</h4></div>
-						<div class="imgFour flexHeight flexStyle"><h4>Sin imagen</h4></div>
-						<div class="imgFive flexHeight flexStyle"><h4>Sin imagen</h4></div>
+						<h4 class="imgTwo flexHeight flexStyle"><a href="#">Sin imagen</a></h4>
+						<h4 class="imgTwo flexHeight flexStyle"><a href="#">Sin imagen</a></h4>
+						<h4 class="imgTwo flexHeight flexStyle"><a href="#">Sin imagen</a></h4>
+						<h4 class="imgTwo flexHeight flexStyle"><a href="#">Sin imagen</a></h4>
 					</div>
 				</section>
 			</main>
-
 			<!--** FOOTER SECTION -->
 			<footer id="contacto">
 				<address class="icons">
@@ -97,12 +97,9 @@
 						href="https://www.youtube.com/channel/UC3k68XAfxXoANvRZOQA-4Zw/featured"
 						target="_blank"
 						class="fa fa-youtube"></a>
-					<a href="https://www.reddit.com/user/Elegant_Difference_9" target="_blank" class="fa fa-reddit"></a>
 				</address>
-				<h4 class="footer__items">Webdev Portfolio, by Diego Jonguitud G.</h4>
-				<div>
-					<p class="footer__items">All Rights Reserved, 2022.</p>
-				</div>
+				<p class="footer__items">Webdev Portfolio, by Diego Jonguitud G.</p>
+				<p class="footer__items">All Rights Reserved, 2022.</p>
 			</footer>
 		</div>
 		<script src="./code/script.js"></script>

@@ -327,8 +327,8 @@ h1 {
 	backdrop-filter: blur(15px);
 }
 
-.imgOne h4 a:visited,
-.imgOne h4 a:link {
+.apps__sctn h4 a:visited,
+.apps__sctn h4 a:link {
 	color: var(--font-color);
 	text-decoration: underline;
 }
@@ -347,7 +347,7 @@ h1 {
 	padding: 2rem;
 }
 
-.apps__flex div:not(.imgOne):hover {
+.apps__flex h4:not(.imgOne):hover {
 	background: rgba(30, 30, 30, 0.46);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(6.4px);
