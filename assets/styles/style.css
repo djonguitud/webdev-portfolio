@@ -31,26 +31,19 @@ body {
 	line-height: 1.15;
 	font-size: 1.6rem;
 	color: var(--font-color);
-	max-width: 200rem;
 	min-height: 100%;
 }
 
-h2 {
-	font-size: clamp(2.1rem, calc(12px + 2.4vw), 3.7rem);
-	line-height: 1.1;
-	font-weight: 700;
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 2250px;
+	margin: 0 auto;
+	background-image: var(--bkgnd-gradient);
 }
 
-h3 {
-	font-size: clamp(1.71rem, calc(12px + 1.8vw), 2.25rem);
-	line-height: 1.1;
-	font-weight: 900;
-}
-
-p {
-	font-size: clamp(1.38rem, calc(12px + 0.72vw), 2.5rem);
-	line-height: 1.1;
-	font-weight: 400;
+.main__content {
+	flex: 1 0 auto; /* To keep the foot on place */
 }
 
 .responsiveImg {
@@ -80,9 +73,10 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: fixed;
-	min-height: 8%;
+	position: sticky;
+	height: 5rem;
 	top: 0;
+	right: 0;
 	width: 100%;
 	transition: top 0.5s;
 	background-color: #dcd9d4;
@@ -96,17 +90,14 @@ header {
 nav {
 	display: flex;
 	align-items: center;
-	max-width: 30%;
+	max-width: 60rem;
 	justify-content: space-around;
 }
 
 nav a {
 	display: block;
-	/* margin-left: 1.5em; */
 	color: var(--bkgnd-color);
-	/* background-color: var(--dflt--color); */
 	padding: 0.5rem;
-	/* border-radius: 50px; */
 	margin: 0.5rem 0 0.5rem 0.9rem;
 	font-size: 1.7rem;
 	font-weight: 400;
@@ -129,24 +120,6 @@ nav a:hover {
 /*=====  End of Section   ======*/
 
 /*=============================================
-=           Main            =
-=============================================*/
-
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	min-height: 100%;
-	background-image: var(--bkgnd-gradient);
-	max-width: 100%;
-}
-
-.main__content {
-	flex: 1 0 auto; /* To keep the foot on place */
-}
-
-/*=============================================
 =           Hero Section          =
 =============================================*/
 
@@ -155,18 +128,21 @@ main {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	word-spacing: normal;
+	margin-top: 6rem;
+	padding-left: 5rem;
 }
 
 .avatar {
-	/* max-width: 28rem;
-	min-width: 20rem; */
-	max-width: 30rem;
-	min-width: 30rem;
-	margin-left: 3rem;
+	width: 30rem;
 }
 
 .avatar img {
 	border-radius: 50%;
+}
+
+.avatarHidden {
+	display: hidden;
 }
 
 .middle-line {
@@ -182,7 +158,10 @@ main {
 	max-width: 60rem;
 	min-width: 7rem;
 	min-height: 20%;
-	margin-right: 3rem;
+}
+
+.slogan h1 {
+	font-size: 6rem;
 }
 
 .specificWordStyle {
@@ -195,8 +174,9 @@ h1 {
 	font-family: "Big Shoulders Text", cursive, sans-serif;
 }
 
-#sloganMty {
-	font-size: 2.5rem;
+.sloganMty {
+	font-size: clamp(1.45rem, calc(12px + 2.8vw), 2.15rem);
+	line-height: 1.1;
 	font-weight: 400;
 }
 
@@ -207,7 +187,7 @@ h1 {
 
 .fa {
 	padding: 0.7rem;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 15%;
@@ -398,24 +378,35 @@ footer {
 		display: none;
 	}
 
-	.avatar {
-		position: relative;
-		right: 5%;
+	.avatar img {
+		width: 18rem;
 	}
 
-	h1 {
-		font-size: 4.5rem;
+	.slogan h1 {
+		font-size: 4.2rem;
 	}
 
-	h1,
-	#sloganMty {
+	.sloganMty {
+		font-size: 1.5rem;
+	}
+
+	.avatar,
+	.slogan h1,
+	.sloganMty,
+	.slogan .icons {
 		text-align: center;
 	}
 
 	/* Media Queries: for acerca section */
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+	nav a {
+		font-size: 1rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		transition: 0.6s;
+	}
 }
 
 /*=====  End of Section   ======*/

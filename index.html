@@ -17,75 +17,78 @@
 		<link rel="stylesheet" href="./assets/styles/style.css" />
 	</head>
 	<body>
-		<!-- * * Very top navagation with fixed position -->
-		<header id="navHide">
-			<!-- TODO Appearing and disappearing nav -->
-			<nav>
-				<a href="#home" id="homeBtn">Inicio</a>
-				<a href="#acerca">Acerca</a>
-				<a href="#aplicaciones">Aplicaciones</a>
-				<a href="#contacto">Contacto</a>
-			</nav>
-		</header>
+		<!-- !Container to stall the width going widther -->
+		<div class="container">
+			<!-- * * Very top navagation with sticky position -->
+			<header id="navHide">
+				<!-- TODO Appearing and disappearing nav -->
+				<nav>
+					<a href="#home" id="homeBtn">Inicio</a>
+					<a href="#acerca">Acerca</a>
+					<a href="#aplicaciones">Aplicaciones</a>
+					<a href="#contacto">Contacto</a>
+				</nav>
+			</header>
 
-		<!-- TODO Container to keep contraints -->
-		<main class="main__content">
-			<!-- ** HERO SECTION -->
-			<section class="hero" id="home">
-				<!-- Avatar photo -->
-				<div class="avatar">
-					<img class="responsiveImg" src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrollador web" />
-				</div>
+			<!-- TODO Container to keep contraints -->
+			<main>
+				<!-- ** HERO SECTION -->
+				<section class="hero main__content" id="home">
+					<!-- Avatar photo -->
+					<div class="avatar">
+						<img class="responsiveImg" src="./assets/images/hero-img.jpg" alt="Foto del rostro del desarrollador web" />
+					</div>
 
-				<!--? Middle line for design purpuses -->
-				<div class="middle-line"></div>
+					<!--? Middle line for design purpuses -->
+					<div class="middle-line"></div>
 
-				<!-- Main slogan -->
-				<div class="slogan">
-					<h1 id="langChange">HOLA! SOY DIEGO. DESARROLLADOR WEB <span class="specificWordStyle">FULL STACK</span></h1>
-					<p id="sloganMty">ESTABLECIDO EN MONTERREY</p>
+					<!-- Main slogan -->
+					<div class="slogan">
+						<h1>HOLA! SOY DIEGO. DESARROLLADOR WEB <span class="specificWordStyle">FULL STACK</span></h1>
+						<p class="sloganMty">ESTABLECIDO EN MONTERREY</p>
+						<div class="icons">
+							<a href="#" target="_blank" class="fa fa-linkedin"></a>
+							<a href="https://github.com/djonguitud" target="_blank" class="fa fa-github"></a>
+							<a href="#" target="_blank" class="fa fa-youtube"></a>
+							<a href="#" target="_blank" class="fa fa-reddit"></a>
+						</div>
+					</div>
 
 					<!--? Social icons -->
-					<div class="icons">
-						<a href="#" target="_blank" class="fa fa-linkedin"></a>
-						<a href="https://github.com/djonguitud" target="_blank" class="fa fa-github"></a>
-						<a href="#" target="_blank" class="fa fa-youtube"></a>
-						<a href="#" target="_blank" class="fa fa-reddit"></a>
-					</div>
-				</div>
-			</section>
+				</section>
 
-			<!--** ACERCA SECTION -->
-			<section class="about__sctn main__content" id="acerca">
-				<div class="about__rspve">
-					<h2 class="subTitles">Acerca</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reprehenderit cumque tempore delectus ipsum
-						soluta?
-					</p>
-				</div>
-			</section>
-			<!-- TODO inside h4 put a tags, maybe change font face of a tags-->
-			<section class="apps__sctn main__content" id="aplicaciones">
-				<div class="apps__flex">
-					<h3 class="subTitles">Aplicaciones prototipo</h3>
-					<div class="imgOne flexHeight">
-						<h4>
-							<a href="https://djonguitud.github.io/horiseon-demo/" target="_blank">Agencia de marketing</a>
-						</h4>
+				<!--** ACERCA SECTION -->
+				<section class="about__sctn main__content" id="acerca">
+					<div class="about__rspve">
+						<h2 class="subTitles">Acerca</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reprehenderit cumque tempore delectus ipsum
+							soluta?
+						</p>
 					</div>
-					<div class="imgTwo flexHeight flexStyle"><h4>Sin imagen</h4></div>
-					<div class="imgThree flexHeight flexStyle"><h4>Sin imagen</h4></div>
-					<div class="imgFour flexHeight flexStyle"><h4>Sin imagen</h4></div>
-					<div class="imgFive flexHeight flexStyle"><h4>Sin imagen</h4></div>
-				</div>
-			</section>
-		</main>
+				</section>
+				<!-- TODO inside h4 put a tags, maybe change font face of a tags-->
+				<section class="apps__sctn main__content" id="aplicaciones">
+					<div class="apps__flex">
+						<h3 class="subTitles">Aplicaciones prototipo</h3>
+						<div class="imgOne flexHeight">
+							<h4>
+								<a href="https://djonguitud.github.io/horiseon-demo/" target="_blank">Agencia de marketing</a>
+							</h4>
+						</div>
+						<div class="imgTwo flexHeight flexStyle"><h4>Sin imagen</h4></div>
+						<div class="imgThree flexHeight flexStyle"><h4>Sin imagen</h4></div>
+						<div class="imgFour flexHeight flexStyle"><h4>Sin imagen</h4></div>
+						<div class="imgFive flexHeight flexStyle"><h4>Sin imagen</h4></div>
+					</div>
+				</section>
+			</main>
 
-		<!--** FOOTER SECTION -->
-		<footer id="contacto">
-			<h3>I'm a footer</h3>
-		</footer>
+			<!--** FOOTER SECTION -->
+			<footer id="contacto">
+				<h3>I'm a footer</h3>
+			</footer>
+		</div>
 		<script src="./code/script.js"></script>
 	</body>
 </html>
