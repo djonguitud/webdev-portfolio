@@ -355,6 +355,17 @@ h1 {
 footer {
 	background-color: var(--font-color);
 	color: var(--bkgnd-color);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5rem;
+}
+
+.footer__items {
+	font-size: clamp(1.375rem, calc(12px + 1.1vw), 1.65rem);
+	font-weight: 600;
+	text-align: center;
 }
 
 /*=====  End of Section   ======*/
@@ -397,16 +408,43 @@ footer {
 		text-align: center;
 	}
 
-	/* Media Queries: for acerca section */
-}
-
-@media screen and (max-width: 600px) {
-	nav a {
-		font-size: 1rem;
-		font-weight: 400;
-		text-transform: uppercase;
+	/* ICONS */
+	.fa {
+		padding: 0.7rem;
+		font-size: 2.4rem;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 15%;
+		background: var(--bkgnd-color);
+		color: white;
 		transition: 0.6s;
 	}
-}
 
+	/* Media Queries: for acerca section */
+
+	/* Footer */
+	footer {
+		background-color: var(--font-color);
+		color: var(--bkgnd-color);
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+		align-items: center;
+		padding: 4rem;
+	}
+
+	.footer__items {
+		margin-top: 5rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		nav a {
+			font-size: 1rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition: 0.6s;
+		}
+	}
+}
 /*=====  End of Section   ======*/
