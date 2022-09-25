@@ -287,7 +287,7 @@ h1 {
 
 .imgOne {
 	width: 100%;
-	background: #fff url(/assets/images/demo-horiseon.png) top center/cover no-repeat;
+	background: #fff url(../images/demo-horiseon.png) top center/cover no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -330,7 +330,6 @@ h1 {
 .apps__sctn h4 a:visited,
 .apps__sctn h4 a:link {
 	color: var(--font-color);
-	
 }
 
 .flexStyle {
