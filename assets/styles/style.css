@@ -243,14 +243,17 @@ h1 {
 	align-items: center;
 	flex-direction: column;
 	letter-spacing: normal;
-	padding: 4rem;
+	max-width: 60%;
+	min-width: 20rem;
+	padding: 1rem;
+	word-spacing: normal;
 }
 
 .about__items p {
-	font-size: clamp(1.61rem, calc(12px + 0.84vw), 1.75rem);
-	line-height: 1.5;
-	margin-top: 1rem;
-	text-align: left;
+	font-size: clamp(1.61rem, calc(12px + 0.84vw), 2rem);
+	line-height: 1.9;
+	margin-top: 3rem;
+	text-align: justify;
 }
 
 /*=====  End of Section   ======*/
