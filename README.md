@@ -19,7 +19,7 @@ esta página podrá migrar de un diseño a otro.
 
 ## Demo
 
-Visita👇mi portafolio dando abajo!
+Visita👇mi portafolio dando click abajo!
 
 - [CLICK ME](https://djonguitud.github.io/webdev-portfolio/)
   ![Quick render](/assets/images/webdev-portfolio.png)
